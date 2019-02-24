@@ -5,6 +5,8 @@ import { CreateComponent } from './components/create/create.component';
 import { EditComponent } from './components/edit/edit.component';
 import { IndexComponent } from './components/index/index.component';
 
+import { FindgameComponent } from './components/findgame/findgame.component';
+
 const routes:Routes = [
   {
     path: 'create',
@@ -22,6 +24,14 @@ const routes:Routes = [
   {
     path: '',
     component: IndexComponent
+  },
+  {
+    path: 'find',
+    component: FindgameComponent
+  },
+  {
+    path: 'find/:name',
+    component: FindgameComponent
   }
 ]
 

@@ -11,7 +11,7 @@ let Game = new Schema({
   }
 },{
     collection: 'games'
-    //,     versionKey: false //to remove __V=0 in mongo document
+    ,     versionKey: false //to remove __V=0 in mongo document
 });
 
 module.exports = mongoose.model('Game', Game);

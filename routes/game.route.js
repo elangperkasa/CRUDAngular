@@ -30,6 +30,14 @@ gameRoutes.route('/').get(function (req, res) {
   });
 });
 
+// Defined find name route
+gameRoutes.route('/find/:name').get(function (req, res) {
+  let name = req.params.name;
+  Game.findOne({name:name}, function (err, game){
+      res.json(game);
+  });
+});
+
 
 // Defined edit route
 gameRoutes.route('/edit/:id').get(function (req, res) {
