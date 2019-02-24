@@ -30,6 +30,7 @@ gameRoutes.route('/').get(function (req, res) {
   });
 });
 
+
 // Defined edit route
 gameRoutes.route('/edit/:id').get(function (req, res) {
   let id = req.params.id;

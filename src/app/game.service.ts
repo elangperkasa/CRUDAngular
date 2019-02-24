@@ -1,3 +1,5 @@
+// game.service.ts
+
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Game } from './components/index/Game';
@@ -22,7 +24,6 @@ export class GameService {
             .subscribe(res =>
             	console.log('Done')
             );
-          
   	}
 
   	getGames() {
