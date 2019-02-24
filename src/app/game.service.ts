@@ -26,11 +26,19 @@ export class GameService {
             );
   	}
 
-  	getGames() {
+  	findNameGame(name) {
   		return this
+            .http
+            .get(`${this.uri}/find/${name}`);
+    }
+
+    getGames() {
+      return this
             .http
             .get(`${this.uri}`);
     }
+
+
 
     editGame(id) {
     	return this

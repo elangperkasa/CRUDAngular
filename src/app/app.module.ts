@@ -11,6 +11,7 @@ import { GameService } from './game.service';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { RouterModule, Routes } from '@angular/router';
+import { FindgameComponent } from './components/findgame/findgame.component';
 
 const routes:Routes = [
   {
@@ -24,6 +25,19 @@ const routes:Routes = [
   {
     path: 'index',
     component: IndexComponent
+  },
+  {
+    path: 'find',
+    component: FindgameComponent
+  }
+  ,
+  {
+    path: '',
+    component: IndexComponent
+  },
+  {
+    path: 'find/:name',
+    component: FindgameComponent
   }
 ]
 
@@ -32,7 +46,8 @@ const routes:Routes = [
     AppComponent,
     CreateComponent,
     EditComponent,
-    IndexComponent
+    IndexComponent,
+    FindgameComponent
   ],
   imports: [
     BrowserModule,
